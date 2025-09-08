@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cabin:ital,wght@0,400..700;1,400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+ font-family: "Cabin", sans-serif;
+ background-color: #8dab8d;
+ color:#454447;
+ font-size: 16px;
+ line-height: 1.2em;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.ffa{
+font-family: "Amatic SC", sans-serif;
+}
+.ffj{
+   font-family: "Josefin Sans", sans-serif;
+}
+
+p{
+  margin-bottom: 25px;
+}
+.m-p-0 p{
+  margin-bottom: 5px;
+}
+
+
+
+.object-contain {
+  object-fit: contain;
+}
+.object-cover {
+  object-fit: cover;
+}
+
+/* colors */
+
+.bg-dark {
+  background-color: #000 !important;
+}
+.text-black-50 {
+  color: #000 !important;
+}
+.text-secondary{
+  color: #606060 !important;
+}
+.text-light{
+      color: #ffd9cb !important;
+}
+
+/* colors end --------------------*/
+
+
+
+
+/* letter spacing */
+
+/* letter spacing end --------------------*/
+
+/* Font size */
+h1,
+.h1 {
+ font-size: 60px;
+ line-height: 1.6;
+}
+h2, .h2{
+  font-size: 52px;
+ line-height: 1;
+}
+h3, .h3{
+  font-size: 35px;
+ line-height: 1;
+}
+h4, .h4{
+  font-size: 32px;
+ line-height: 1;
+}
+h5, .h5{
+  font-size: 28px;
+ line-height: 1;
+}
+.fs-18{
+  font-size: 18px;
+}
+.fs-14{
+  font-size: 14px !important;
+}
+
+
+/* Font size end --------------------*/
+
+/* line heights */
+
+/* line heights end --------------------*/
+
+
+/* .text-shadow {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
+} */
+
+/* buttons */
+.rounded-1{
+  border-radius: 10px !important;
+}
+.border-primary{
+  border-color: #4544476b !important;
+}
+.btn {
+  padding: 13px 25px;
+    border: 3px solid;
+    display: inline-block;
+    border-radius: 3px;
+    line-height: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+.btn-warning, .btn-light:hover, .btn-light:focus, .btn-light:active:focus{
+  background-color: #f1f903;
+  border-color: #f98d03;
+  color: rgb(85, 85, 85);
+  box-shadow: none;
+}
+.btn-light, .btn-warning:hover, .btn-warning:focus, .btn-warning:active:focus {
+      background-color: #eee4cc;
+      border-color: #eee4cc;
+      color: rgb(85, 85, 85);
+      box-shadow: none;
+}
+.header-info a:hover, .info-links ul li a:hover{
+    color: #eee4cc !important;
+}
+
+/* buttons end --------------------*/
+
+
+/* Header css  */
+
+header {
+  position: relative;
+  z-index: 99;
+}
+
+
+.navbar-brand {
+  display: inline-block;
+  max-width: 327px;
+  width: 100%;
+}
+
+.navbar-nav .nav-link {
+  line-height: normal;
+    padding: 10px 20px !important;
+    border-radius: 0px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    border-right: 1px solid #454447;
+    margin-bottom: 15px;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    color: #eee4cc;
+    font-size: 23px;
+    transition: all 0.25s ease-in 0s;
+}
+.navbar-nav > li + li {
+  margin-left: 0px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover, .footer-links ul li a:hover {
+       color: #454447;
+}
+
+
+
+
+button#ScrollToTop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: transparent;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #0e613b ;
+  z-index: 99;
+  color: #0e613b ;
+}
+
+button#ScrollToTop:hover {
+  background: #0e613b ;
+  color: #000;
+}
+:focus-visible{
+  outline: none;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 20px  0;
+        background-color: #8dab8d !important;
+        border-bottom: 1px solid rgba(69, 68, 71, 0.2);
+    text-align: center;
+    display: block;
+      }
+.dropdown-item:hover, .dropdown-item:focus {
+      background-color: rgb(69, 68, 71) !important;
+}
+      .dropdown-toggle::after {
+    margin-left: .255em;
+    vertical-align: 0;
+    content: "";
+    font-family: "Font Awesome 6 Free";
+    font-size: 20px;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+.dropdown-menu {
+  border-color: rgba(69, 68, 71, 0.2) !important;
+}
+
+
+
+@media (min-width: 1199px) {
+  div#navbarOffcanvas {
+    position: inherit !important;
+    flex-direction: row;
+    visibility: visible;
+    width: auto;
+    transform: translateX(0%);
+    border-right: 0;
+    margin-left: 0;
+    background-color: transparent;
+  }
+  .offcanvas-body {
+    flex-grow: 0;
+    padding: 0;
+    overflow-y: visible;
+  }
+  /* .scrolled header {
+  position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+} */
+}
+
+
+/* Header css end --------------------*/
+
+
+/* body css */
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-image: none;
+}
+
+.carousel-control-next-icon::before, .carousel-control-prev-icon::before {
+    content: "\f105";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #333;
+    font-size: 40px;
+    display: inline-block;
+    line-height: 1;
+}
+.carousel-control-next, .carousel-control-prev{
+    opacity: 1;
+     width: 4%;
+}
+.carousel-control-prev-icon::before {
+    content: "\f104"; 
+}
+.carousel-item{
+  height: 100vh;
+}
+.footer-links ul li, .info-links ul li a {
+    font-size: 14px;
+    line-height: 1.6em;
+    margin-bottom: 5px;
+    color: #454447;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+}
+.info-links ul li a {
+    display: inline-block;
+}
+.footer-wrap h3{
+  line-height: 1.4em;
+}
+.tap-call.bg-secondary{
+  background-color: #454447 !important;
+}
+.tap-email.bg-success{
+          background-color: #0e613b  !important;
+}
+
+.tap-call a, .tap-email a{
+color: #eee4cc !important;
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    background: transparent;
+    opacity: 1;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+     background: #333;
+}
+/* body css end --------------------*/
+
+
+
+
+
+/* media css */
+
+
+
+
+
+@media (max-width: 1199.99px) {
+  .container{
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .navbar-toggler {
+    color: rgb(69, 68, 71);
+    font-size: 30px;
+    padding: 0;
+    display: block;
+    box-shadow: none;
+    background: transparent;
+    border: none;
+        
+  }
+  .navbar-nav .nav-link {
+    margin: 0px 0px;
+    width: 100%;
+  }
+  .navbar-nav .nav-link {
+    border-right: none;
+    text-align: left;
+}
+
+  .navbar-toggler-icon {
+    width: auto;
+    height: auto;
+        background: transparent;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  div#navbarOffcanvas {
+    background: rgb(28, 28, 28) !important;
+    border-right: 0 !important;
+    padding: 35px 10px !important;
+    width: 50% !important;
+  }
+  .navbar-nav > li + li {
+    margin-left: 0;
+  }
+
+  .offcanvas-header .btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    /* filter: brightness(1) invert(0); */
+    opacity: 1;
+  }
+  .offcanvas-header {
+    padding: 0;
+    display: block !important;
+  }
+  .offcanvas.offcanvas-start {
+    top: 0;
+    left: auto;
+    right: 0;
+}
+  .dropdown-item {
+    background-color: rgb(28, 28, 28) !important;
+    color: #eee4cc !important;
+    padding: 10px !important;
+    text-align: left;
+}
+}
+
+@media(max-width: 767.98px) {
+.carousel-item {
+    height: 700px;
+}
+.banner-sec .container{
+  padding-left: 0%;
+  padding-right: 0%;
+}
+.container{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+footer .col-md-4{
+  border: none !important;
+}
+    div#navbarOffcanvas {
+        width: 300px !important;
+    }
+}
+
+@media(max-width: 575.98px) {
+  .navbar-brand {
+    max-width: 250px;
+}
+.carousel-item
+ {
+        height: 500px;
+    }
+h1, .h1 {
+    font-size: 50px;
+line-height: 1;
+}
+.carousel-control-next, .carousel-control-prev {
+    width: 9%;
+}
+}
+/* media css end --------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
