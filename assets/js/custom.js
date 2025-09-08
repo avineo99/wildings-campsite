@@ -28,12 +28,9 @@ $(document).ready(function () {
 	  
 });
 
-$(".testimonial-wrap").slick({
-  dots: true,
-  arrows: false,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  
+document.addEventListener("DOMContentLoaded", function () {
+  // yahan apna carousel code likho
+  document
+    .querySelector(".carousel-control-next-icon")
+    .classList.add("something");
 });

@@ -379,7 +379,7 @@ color: #eee4cc !important;
     background: rgb(28, 28, 28) !important;
     border-right: 0 !important;
     padding: 35px 10px !important;
-    width: 50% !important;
+    width: 300px !important;
   }
   .navbar-nav > li + li {
     margin-left: 0;
@@ -396,16 +396,15 @@ color: #eee4cc !important;
     padding: 0;
     display: block !important;
   }
-  .offcanvas.offcanvas-start {
-    top: 0;
-    left: auto;
-    right: 0;
-}
+
   .dropdown-item {
     background-color: rgb(28, 28, 28) !important;
     color: #eee4cc !important;
     padding: 10px !important;
     text-align: left;
+}
+.carousel-item {
+    height: 700px;
 }
 }
 
@@ -427,6 +426,9 @@ footer .col-md-4{
     div#navbarOffcanvas {
         width: 300px !important;
     }
+    .navbar-brand {
+    max-width: 250px;
+}
 }
 
 @media(max-width: 575.98px) {
@@ -444,6 +446,9 @@ line-height: 1;
 .carousel-control-next, .carousel-control-prev {
     width: 9%;
 }
+  .navbar-toggler {
+    font-size: 25px;
+  }
 }
 /* media css end --------------------*/
 
